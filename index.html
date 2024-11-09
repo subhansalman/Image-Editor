@@ -4,10 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="imgarea">
+            <input type="file" name="" id="" class="fileinp" hidden>
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <span>Choose Image</span>
+            <img src="" alt="">
+        </div>
+        <div class="effectblock">
+            <div class="effects">
+                <label for="" class="label">Blur:</label>
+                <input type="range" name="Blur" class="blur range" min="0" max="10">
+            </div>
+
+            <div class="effects">
+                <label for="" class="label">Brightness:</label>
+                <input type="range" name="Blur" class="brightness range" min="0" value="100" max="200">
+            </div>
+            
+            <div class="effects">
+                <label for="" class="label">Contrast:</label>
+                <input type="range" name="Blur" class="contrast range" min="0" value="100" max="200">
+            </div>
+            
+            <div class="effects">
+                <label for="" class="label">Gray Scale:</label>
+                <input type="range" name="Blur" class="grayscale range" min="0" value="100" max="200">
+            </div>
+            
+            <div class="effects">
+                <label for="" class="label">Hue Rotate:</label>
+                <input type="range" name="Blur" class="huerotate range" min="0" max="360" value="0">
+            </div>
+
+            <div class="effects">
+                <label for="" class="label">Opacity:</label>
+                <input type="range" name="Blur" class="opacity range" min="0" 
+                step="0.1" value="1" max="1">
+            </div>
+
+            <div class="effects">
+                <label for="" class="label">Saturate:</label>
+                <input type="range" name="Blur" class="saturate range" min="0" value="100" max="200">
+            </div>
+
+            <div class="effects">
+                <label for="" class="label">Sepia:</label>
+                <input type="range" name="Blur" class="sepia range" min="0" value="100" max="200">
+            </div>
+            <button class="dwn-btn">DOWNLOAD</button>
+        </div>
+    </div>
 
 
     <script src="app.js"></script>
