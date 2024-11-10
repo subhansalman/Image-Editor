@@ -10,51 +10,51 @@
 <body>
     <div class="wrapper">
         <div class="imgarea">
-            <input type="file" name="" id="" class="fileinp" hidden>
+            <input type="file" name="" id="" class="fileinp" hidden onchange="handleFileInput(event)">
             <i class="fa-solid fa-file-arrow-up"></i>
             <span>Choose Image</span>
-            <img src="" alt="">
+            <img src="" alt="" class="img">
         </div>
         <div class="effectblock">
             <div class="effects">
                 <label for="" class="label">Blur:</label>
-                <input type="range" name="Blur" class="blur range" min="0" max="10">
+                <input type="range" name="blurr" class="blur range" min="0" max="10" onchange="getEffectchange(event)">
             </div>
 
             <div class="effects">
                 <label for="" class="label">Brightness:</label>
-                <input type="range" name="Blur" class="brightness range" min="0" value="100" max="200">
+                <input type="range" name="brightness" class="brightness range" min="0" value="100" max="200" onchange="getEffectchange(event)">
             </div>
             
             <div class="effects">
                 <label for="" class="label">Contrast:</label>
-                <input type="range" name="Blur" class="contrast range" min="0" value="100" max="200">
+                <input type="range" name="contrast" class="contrast range" min="0" value="100" max="200" onchange="getEffectchange(event)">
             </div>
             
             <div class="effects">
                 <label for="" class="label">Gray Scale:</label>
-                <input type="range" name="Blur" class="grayscale range" min="0" value="100" max="200">
+                <input type="range" name="grayscale" class="grayscale range" min="0" value="100" max="200" onchange="getEffectchange(event)">
             </div>
             
             <div class="effects">
                 <label for="" class="label">Hue Rotate:</label>
-                <input type="range" name="Blur" class="huerotate range" min="0" max="360" value="0">
+                <input type="range" name="huerotate" class="huerotate range" min="0" max="360" value="0" onchange="getEffectchange(event)">
             </div>
 
             <div class="effects">
                 <label for="" class="label">Opacity:</label>
-                <input type="range" name="Blur" class="opacity range" min="0" 
-                step="0.1" value="1" max="1">
+                <input type="range" name="opacity" class="opacity range" min="0" 
+                step="0.1" value="1" max="1" onchange="getEffectchange(event)">
             </div>
 
             <div class="effects">
                 <label for="" class="label">Saturate:</label>
-                <input type="range" name="Blur" class="saturate range" min="0" value="100" max="200">
+                <input type="range" name="saturate" class="saturate range" min="0" value="100" max="200" onchange="getEffectchange(event)">
             </div>
 
             <div class="effects">
                 <label for="" class="label">Sepia:</label>
-                <input type="range" name="Blur" class="sepia range" min="0" value="100" max="200">
+                <input type="range" name="sepia" class="sepia range" min="0" value="100" max="200" onchange="getEffectchange(event)">
             </div>
             <button class="dwn-btn">DOWNLOAD</button>
         </div>
